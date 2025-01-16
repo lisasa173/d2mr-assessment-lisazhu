@@ -16,6 +16,8 @@ sdfkjsdf(3)
 
 # Slightly more complicated, including other functions in a function
 add.two2 <- function(x) {return(paste(as.character(x), "two"))}
+?paste()
+add.two2(3)
 
 # What counts as "returning"?
 
