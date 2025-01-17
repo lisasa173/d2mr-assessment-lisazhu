@@ -69,6 +69,12 @@ shop <- function(eggs) { # do they have eggs? T/F
 
 shop(TRUE) # Run the function by setting the one and only argument (eggs) to either TRUE or FALSE
 
+#my attempt
+shop2<- function (eggs2) {
+  if (eggs2 == TRUE) {
+    n.milk2 <-6} else {
+  n.milk2 <- 1}
+  paste0 ("Here's the milk. I bought ", n.milk2, ".")}
 
 ```
 
@@ -119,7 +125,21 @@ if (milk == TRUE && eggs == TRUE) { # If there’s milk AND eggs
 }
 
 paste0("Here's the milk. I bought ", n.milk, ".")
+```
+```{r my attempt for 2}
+milk <- FALSE
+eggs <- FALSE
+if (milk == TRUE && eggs == TRUE) {
+  n.milk <- 6
+} else if (milk == TRUE && eggs == FALSE) {
+  n.milk <- 1
+} else if (milk == FALSE && eggs == TRUE) {
+  n.milk <- 0
+} else {
+  n.milk <- 0
+}
 
+paste0 ("Here's the milk. I bought ", n.milk, ".")
 ```
 
 Does it work as expected? Try different combinations of milk and eggs being in and out of stock to see how things change.
@@ -157,19 +177,38 @@ shop2 <- function(milk, eggs) { # do they have milk? eggs?
 }
 ```
 
+```{r my attempt for function}
+shop2 <- function (milk, eggs) {
+  if (milk == TRUE && eggs == TRUE) {
+  n.milk <- 6
+} else if (milk == TRUE && eggs == FALSE) {
+  n.milk <-1
+} else if (milk == FALSE & eggs == TRUE) {
+  n.milk <- 0
+}
+  return (n.milk)
+}
+
+#milk yes eggs no
+case0 <- shop2 (TRUE, FALSE)
+paste0 ("Here's the milk. I bought ", case0, ".")
+
+#milk yes egg yes
+case1 <- shop2 (TRUE, TRUE)
+paste0 ("Here's the milk. I bought ", case1, ".")
+```
+
 After confirming the function works as expected, we can run it with different values for milk and eggs to see how the output changes.
 
 ### Case 1: The store has milk but not eggs
 
 ```{r}
-
 #| label: attempt-2-case-1
 
 # Case 1: The store has milk but not eggs:
 case1 <- shop2(TRUE, FALSE)
 
 paste0("Here's the milk. I bought ", case1, ".")
-
 ```
 
 The programmer returns with 1 carton of milk. 
@@ -193,11 +232,9 @@ case2 <- shop2(TRUE, TRUE)
 
 paste0("Here's the milk. I bought ", case2, ".")
 
-
 # ?Q?: ^^^ If you just run `n.milk` here in the global enviornment it isn't 
 # dependent on anything that happened within the shop2 function, but there IS 
 # a way to make it work that way -- figure out how!
-
 ```
 
 
@@ -242,10 +279,34 @@ shop3 <- function(milk, eggs) {
   }
   paste0("I bought ", n.milk, " milk and ", n.eggs, " eggs.")
 }
-
 ```
 
 ### Case 1: The store has both milk and eggs
+
+```{r my attempt}
+shop3 <- function (milk,eggs) {
+ if (milk == TRUE && eggs == TRUE) {
+   n.milk <- 1
+   n.egg <- 6
+ } else if (milk == FALSE && eggs == TRUE) {
+   n.milk <- 0
+   n.egg <-6
+ } else if (milk == TRUE && eggs == FALSE) {
+   n.milk <- 1
+   n.egg <- 0
+ } else {
+   n.milk <- 0
+   n.egg <- 0
+ }
+  paste0 ("I bought ", n.milk, " milk and ", n.egg, " eggs.")
+}
+
+case10 <- shop3 (TRUE, TRUE)
+case10
+
+case11 <- shop3 (TRUE, FALSE)
+case11
+```
 
 This is the case that didn't behave as expected in attempt 2 because the programmer only came home with milk and no eggs.
 
@@ -273,12 +334,59 @@ The function itself works, but it isn't very efficient. It's checking the same c
 As an exercise, revise the conditional (or start from scratch!) to bring home the right groceries without so much redundancy.
 
 ```{r}
-#| label: epilogue-revised-function
+##| label: epilogue-revised-function
+
+#load in library tidyverse
+library(tidyverse)
 
 # Write a function that does exactly the same thing as shop3, but with less redundancy
-
+shop4 <- function (milk) {
+  if_else (milk == TRUE, n.milk <-1, n.milk <- 0)
+}
+shop5<- function (eggs) {
+  if_else (eggs == TRUE, n.eggs <-6, n.eggs <- 0)
+}
+paste0 ("I bought ", shop4(TRUE), " milk and ", shop5(TRUE), " eggs.")
 ```
 
 If you want, you can take it further. What if the partner asks for a carton of milk and a dozen eggs? What if they ask for a carton of milk and a dozen eggs, but only if the store has both? What if they ask for a carton of milk and a dozen eggs, but only if the store has both, and if the store has neither, they ask for a loaf of bread?
 
 Try out some simple functions as an exercise, or turn this into a mini-project!
+```{r}
+#a carton of milk & a dozen eggs
+shop6 <- function (milk) {
+  if_else (milk == TRUE, n.milk <- 1, n.milk <- 0)
+}
+shop7 <- function (eggs) {
+  if_else (eggs == TRUE, n.eggs <- 12, n.eggs <- 0)
+}
+paste0 ("I bought ", shop6 (TRUE), " milk and ", shop7 (TRUE), " eggs.")
+
+#A carton of milk and a dozen eggs only if the store has both.
+shop8 <- function (milk, eggs) {
+  if (milk ==TRUE && eggs == TRUE) {
+    n.milk <- 1
+    n.eggs <-12
+  } else  {
+    n.milk <-0
+    n.eggs <-0
+  }
+  paste0 ("I bought ", n.milk, " milk and ", n.eggs, " eggs.")
+  }
+shop8 (TRUE, TRUE)
+
+#Neither milk or eggs then a loaf of bread
+shop9 <- function (milk, eggs) {
+  if (milk == FALSE && eggs == FALSE) {
+    n.milk <- 0
+    n.eggs <- 0
+    n.bread <-1
+  } else {
+    n.milk <- 1
+    n.eggs <- 12
+    n.bread <- 0
+  }
+  paste0 ("I bought ", n.milk, " milk,", n.eggs, " eggs and ", n.bread, " loaf of bread.")
+}
+shop9 (FALSE, FALSE)
+```
