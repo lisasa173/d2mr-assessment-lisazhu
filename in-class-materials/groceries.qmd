@@ -347,6 +347,7 @@ shop5<- function (eggs) {
   if_else (eggs == TRUE, n.eggs <-6, n.eggs <- 0)
 }
 paste0 ("I bought ", shop4(TRUE), " milk and ", shop5(TRUE), " eggs.")
+
 ```
 
 If you want, you can take it further. What if the partner asks for a carton of milk and a dozen eggs? What if they ask for a carton of milk and a dozen eggs, but only if the store has both? What if they ask for a carton of milk and a dozen eggs, but only if the store has both, and if the store has neither, they ask for a loaf of bread?
