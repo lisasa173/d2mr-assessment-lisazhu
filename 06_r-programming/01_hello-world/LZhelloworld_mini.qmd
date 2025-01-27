@@ -1,12 +1,20 @@
 ---
 title: "LZhelloworld_mini"
 format: html
-editor: visual
+author: "Xiaozhuang Zhu"
+date: "2025-1-26"
 ---
 
 ```{r Define hello world function}
-hello_world_season <- function(date, n_describe) {
+#import packages
+install.packages("stringr")
+library(stringr)
+require(stringr)
+library(tidyverse)
+
+hello_world_season <- function(name, date, n_describe) {
   #Format input variables, extracting the month and the day from the "x-y-z" format of the date
+  name <- paste0 (toupper(substr(name, 1, 1)), tolower(substr(name, 2, nchar(name))))
   date <- as.Date (date)
   month <- as.numeric (format(date,"%m"))
   day <- as.numeric (format (date, "%d"))
@@ -20,23 +28,24 @@ hello_world_season <- function(date, n_describe) {
   ((month == 9 && day >= 21) || (month == 10 && 11) || (month == 12 && day < 21))
     {season <-  ("Fall")}
   #Assign descriptions applicable to any season
-  description <- c (paste0 (season, " is my favorite season."),
-                    paste0 ("I love the beautiful ", season, "."),
-                    paste0 ("The nature in ", season, " gives me hope and courage."))
+  description <- c (paste0 (season, " is ", name, "'s favorite season."),
+                    paste0 (name, "'s soul belongs to ", season, "."),
+                    paste0 ("The nature in ", season, " gives ", name, " hope and courage."))
   #Build a while loop that randomly pulls out n_describe descriptions 
   i <- 1
+  if (n_describe == 0) {
+    elements <- c("1) name", "2) date", "3) the number of descriptions you would like to generate")
+    for (i in elements)
+      print (paste ("This function requires you to input the following variable:", i))
+  } else {
   while (i <= n_describe) {
     print (sample (description, 1))
     i <- i+ 1
   }}
+  }
 
-hello_world_season ("2015-3-20", 4)
+#print the result for  more than 0 descriptor:
+hello_world_season ("LaYLa", "2015-3-20", 4)
+#print the result for 0 descriptor:
+hello_world_season ("LaYLa", "2015-3-20", 0)
 ```
-
-To make things trickier, show more skills, or earn engagement points, try one or more of the following:
-
-1.  You can also choose to build your project in a Quarto notebook (vs .R script) to demonstrate additional markdown/quarto skills. If you do this, you can either define your function within the notebook or source it from an .R script.
-2.  Write multiple functions, so that your final `hello_world()` function includes the other function(s). For example, you could write a function takes a precise time and returns a general time of day (morning, afternoon, evening, night), then have your `hello_world()` function could use this function to determine the time of day and return a greeting accordingly.
-3.  Use the `stringr` package to manipulate the input arguments in some way. For example, you could use `str_to_lower()` to make sure the name argument is all (or mostly) lowercase before returning a greeting, so that a name argument of "NaTaLiE" would result in something like "hello Natalie".
-4.  Include one or more `for` or `while` loops in addition to the conditional statement(s).
-5.  Make me (and you) laugh! This is a classic beginner exercise, which gives you a chance to get creative. You'll be able to show off more coding skills if you can make it entertaining enough for you to stick with it a little longer.

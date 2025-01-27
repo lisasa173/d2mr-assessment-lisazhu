@@ -28,3 +28,5 @@ hello_world <- function(name, n_greet) {
 
 hello_world("Dr. Dowling", 5) # call the function with my name and ask for 5 greetings
 #llla
+
+hello_world("Natalie", 7)

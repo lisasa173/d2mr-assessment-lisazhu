@@ -2,7 +2,14 @@
 ## It has not been edited in any way, and consequently may not 
 ## behave as it did at the time of writing.
 
+#My attempt 1:
+hello_lisa <-function (name, current_time = weekdays(Sys.time()+2)) {
+  Sys.setlocale("LC_TIME", "English")
+  return (paste0 ("Hi", name, "it is", current_time))
+}
+hello_lisa ("Lisa")
 
+#Natalie's comments:
 hello_world <- function(name, current_time = Sys.time()) {
     Sys.setlocale("LC_TIME", "English")
     # Convert the string to a POSIXct object
@@ -15,6 +22,10 @@ hello_world <- function(name, current_time = Sys.time()) {
     } else {
         course <- FALSE
         days_to_add <- 1
+        #why is there a while loop here?
+        #The loop continues to add one day at a time to days_to_add and checks 
+        #if the new date lands on a Tuesday or Thursday. Once it finds a Tuesday or Thursday, 
+        #course is set to TRUE, which breaks the loop.
         while (course == FALSE) {
             if (weekdays(Sys.Date() + days_to_add) == "Tuesday" | weekdays(Sys.Date() + days_to_add) == "Thursday") {
                 course <- TRUE
@@ -44,3 +55,4 @@ hello_world <- function(name, current_time = Sys.time()) {
 }
 
 hello_world("Dr. Dowling")
+

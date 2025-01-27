@@ -26,7 +26,7 @@ Mini-project title: LZhelloworld_mini
 
 Submission date: Jan 26, 2025
 
-Project GitHub subdirectory URL: 
+Project GitHub subdirectory URL: https://github.com/lisasa173/d2mr-assessment-lisazhu/tree/main/06_r-programming/01_hello-world
 
 URL or instructions to access additional materials, if needed:
 
@@ -58,7 +58,7 @@ Below each learning objective is a list of general expectations for meeting that
     3.  Does not have duplicate/redundant elements
 
         -   [ ] Objective attempt
-        -   [ ] Unique objective attempt
+        -   [*] Unique objective attempt
         -   [ ] Objective met
         -   Grader comments: 
 
@@ -68,7 +68,7 @@ Below each learning objective is a list of general expectations for meeting that
     2.  Outlines the repo structure with file tree or similar
 
         -   [ ] Objective attempt
-        -   [ ] Unique objective attempt
+        -   [*] Unique objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -78,7 +78,7 @@ Below each learning objective is a list of general expectations for meeting that
     2.  .gitignore comprehensively excludes unnecessary, private, and very large files and is be commeted appropriately
 
         -   [ ] Objective attempt
-        -   [ ] Unique objective attempt
+        -   [*] Unique objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -88,7 +88,7 @@ Below each learning objective is a list of general expectations for meeting that
     2.  Relies on document revisions rather than manually created new versions
 
         -   [ ] Objective attempt
-        -   [ ] Unique objective attempt
+        -   [*] Unique objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -100,7 +100,7 @@ Below each learning objective is a list of general expectations for meeting that
     2. Uses more than one function to install/load/require packages
 
         -   [ ] Objective attempt
-        -   [ ] Unique objective attempt
+        -   [*] Unique objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -110,7 +110,7 @@ Below each learning objective is a list of general expectations for meeting that
     2. Uses multiple operators in data transformation pipelines and/or inline R code
 
         -   [ ] Objective attempt
-        -   [ ] Unique objective attempt
+        -   [*] Unique objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -121,7 +121,7 @@ Below each learning objective is a list of general expectations for meeting that
     3. Functions are well-documented with comments
 
         -   [ ] Objective attempt
-        -   [ ] Unique objective attempt
+        -   [*] Unique objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -131,7 +131,7 @@ Below each learning objective is a list of general expectations for meeting that
     2. Uses multiple types of conditional/loop functions (e.g., `if_else()`, `case_when()`, `for`, `while`)
 
         -   [ ] Objective attempt
-        -   [ ] Unique objective attempt
+        -   [*] Unique objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -160,11 +160,11 @@ Below each learning objective is a list of general expectations for meeting that
 
 11. Use `stringr` functions to work with string variables
 
-    1. Uses ate least 2 unique `stringr` functions 
+    1. Uses at least 2 unique `stringr` functions 
     2. Uses `stringr` functions in a data transformation pipeline
 
         -   [ ] Objective attempt
-        -   [ ] Unique objective attempt
+        -   [*] Unique objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -293,7 +293,7 @@ Below each learning objective is a list of general expectations for meeting that
     4.  Chunks are distributed throughout the manuscript, sensibly placed near the text they support
 
         -   [ ] Objective attempt
-        -   [ ] Unique objective attempt
+        -   [*] Unique objective attempt
         -   [ ] Objective met
         -   Grader comments: 
         
@@ -305,7 +305,7 @@ Below each learning objective is a list of general expectations for meeting that
     4. Organizes setup chunks sensibly
 
         -   [ ] Objective attempt
-        -   [ ] Unique objective attempt
+        -   [*] Unique objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -342,7 +342,7 @@ Below each learning objective is a list of general expectations for meeting that
     1. Includes all necessary metadata, output options, and formatting options necessary to render an APA styled document (or other specified style if appropriate for the project)
 
         -   [ ] Objective attempt
-        -   [ ] Unique objective attempt
+        -   [*] Unique objective attempt
         -   [ ] Objective met
         -   Grader comments:
 
@@ -430,7 +430,7 @@ You are not required to demonstrate these objectives in your independent project
 If you believe you have demonstrated any of the above skills sufficiently to count toward the 20 additional objectives-based points, please indicate which objective(s) you believe you have met and provide a brief explanation of how you have met each objective.
 
 <!-- Explanation of demonstrated unassessed objectives below this line -->
-
+I believe that I have completed unassessed objectives 1, 
 
 <!-- Explanation of demonstrated unassessed objectives above this line -->
 
@@ -449,17 +449,13 @@ If you have demonstrated any off-the-syllabus skills related to the course but n
 Optionally, you may provide a brief reflection on your experience with this project. What did you learn? What would you do differently next time? What was the most challenging part of the project? What was the most rewarding? You do not have to answer these questions directly; they are just meant to help you think about your experience.
 
 Thoughtful reflections may earn engagement points.
+I learnt to write for and while loops. I found while loops combined with if {} else {} arguments difficult to run, especially when I try to get a function recognize if an input year is a leap year and if not, then output how many more years are needed to reach a leap year. With my TA's suggestions, I separated the conditional statement from the loop. Then the logic became clearer.
 
+I think that next time rather than debugging for 6 hours straight while still not finding a clue, I need to reach out for help earlier, and try to modify my method. 
 
 <!-- Reflection below this line -->
-
-
-
-
-
-
-
-
+I met unassessed objective 1 by using comments throughout the document to explain my basic steps. 
+I met unassessed objective 8 by including a for loop and a while loop.
 
 <!-- Do not edit below this line. -->
 
