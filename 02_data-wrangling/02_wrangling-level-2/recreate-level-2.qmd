@@ -28,7 +28,6 @@ set.seed(5678)
 
 Run this chunk to see what your end product should look like.
 
-
 ```{r}
 
 #| label: load-goal-tibble
@@ -41,7 +40,7 @@ gm.wrangled.goal <- read_csv("gm-wrangled-goal.csv",
 
 
 # View in console
-gm.wrangled.goal 
+gm.wrangled.goal
 
 ```
 
@@ -49,10 +48,11 @@ Start by saving the `gapminder` dataset to a new tbl called `gm.wrangled`. You w
 
 ```{r}
 #| label: load-starting-data
+view(gapminder)
 
 # create gm.wrangled
-
-
+gm.wrangled <- as_tibble(gapminder)
+view(gm.wrangled)
 ```
 
 

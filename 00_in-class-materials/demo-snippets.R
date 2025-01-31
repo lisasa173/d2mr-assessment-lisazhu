@@ -6,13 +6,16 @@ library(tidyverse)
 
 # Defining a simple function
 add.two <- function(x) {return(x + 2)}
+add.two(1)
 
 # The names don't matter
 # Assign it to any name and call the arguments whatever you want
 sdfkjsdf <- function(kgguw) {return(kgguw + 2)}
+sdfkjsdf(1)
 
 # Slightly more complicated, including other functions in a function
 add.two2 <- function(x) {return(paste(as.character(x), "two"))}
+add.two2 (1)
 
 # What counts as "returning"?
 
