@@ -59,8 +59,8 @@ Below each learning objective is a list of general expectations for meeting that
 
         -   [ ] Objective attempt
         -   [*] Unique objective attempt
-        -   [ ] Objective met
-        -   Grader comments: 
+        -   [] Objective met
+        -   Grader comments: A separated repository is needed to meet GitHub objectives since assessment is largely maintained by Dr. Dowling.
 
 2.  Maintain an informative and up-to-date README.md
 
@@ -101,8 +101,8 @@ Below each learning objective is a list of general expectations for meeting that
 
         -   [ ] Objective attempt
         -   [*] Unique objective attempt
-        -   [ ] Objective met
-        -   Grader comments:
+        -   [x] Objective met
+        -   Grader comments: I checked the objectives met by [ x ]
 
 6.  Use arithmetic, comparison, and logical operators
 
@@ -111,7 +111,7 @@ Below each learning objective is a list of general expectations for meeting that
 
         -   [ ] Objective attempt
         -   [*] Unique objective attempt
-        -   [ ] Objective met
+        -   [x] Objective met
         -   Grader comments:
 
 7.  Parse and define functions and arguments
@@ -122,7 +122,7 @@ Below each learning objective is a list of general expectations for meeting that
 
         -   [ ] Objective attempt
         -   [*] Unique objective attempt
-        -   [ ] Objective met
+        -   [x] Objective met
         -   Grader comments:
 
 8.  Parse and write conditional statements and/or loops
@@ -132,7 +132,7 @@ Below each learning objective is a list of general expectations for meeting that
 
         -   [ ] Objective attempt
         -   [*] Unique objective attempt
-        -   [ ] Objective met
+        -   [x] Objective met
         -   Grader comments:
 
 ### Tidyverse
@@ -165,7 +165,7 @@ Below each learning objective is a list of general expectations for meeting that
 
         -   [ ] Objective attempt
         -   [*] Unique objective attempt
-        -   [ ] Objective met
+        -   [x] Objective met
         -   Grader comments:
 
 12. Use `forcats` functions to work with factor variables
@@ -295,7 +295,8 @@ Below each learning objective is a list of general expectations for meeting that
         -   [ ] Objective attempt
         -   [*] Unique objective attempt
         -   [ ] Objective met
-        -   Grader comments: 
+        -   Grader comments: It's hard to show that you followed the practices since there's only one chunk in the file. 
+                For this work, you could split the codes into three chunks: loading the libraries, define the function, and run tests.
         
 23. Use code chunks to set up a quarto document
 
@@ -307,7 +308,8 @@ Below each learning objective is a list of general expectations for meeting that
         -   [ ] Objective attempt
         -   [*] Unique objective attempt
         -   [ ] Objective met
-        -   Grader comments:
+        -   Grader comments: The provided code does not source any external .R scripts or read in data from external sources. 
+                There is no explicit setting of preferences or options, which refers to things like `echo`.
 
 24. Render publication-quality tables, figures, and images from code chunks
 
@@ -344,7 +346,8 @@ Below each learning objective is a list of general expectations for meeting that
         -   [ ] Objective attempt
         -   [*] Unique objective attempt
         -   [ ] Objective met
-        -   Grader comments:
+        -   Grader comments: The YAML header contains basic elements like title, format, author, and date. 
+                However, for an APA-styled document, it lacks specific APA formatting settings which typically include things like `apa`, `csl`, and more. 
 
 27. Use quarto R Markdown to compose an academic manuscript
 
@@ -463,11 +466,11 @@ I met unassessed objective 8 by including a for loop and a while loop.
 
 -   Grader:
 -   Date:
--   Points toward unique objectives (up to 20):
--   Additional points (up to 20):
--   TA provisional engagement points (up to 10):
+-   Points toward unique objectives (up to 20): 5
+-   Additional points (up to 20): 2
+-   TA provisional engagement points (up to 10): 4 (Lisa has been going to my office hours)
 -   Final approved engagement points (up to 10):
--   Total points (up to 50):
+-   Total points (up to 50): 11
 
 Engagement points are awarded for going above and beyond the expectations of the project and are not guaranteed on any given submission.. Demonstrating the assessed learning objectives earns you points in those categories, but engagement points are awarded for exceptional effort, creativity, or skill.
 
